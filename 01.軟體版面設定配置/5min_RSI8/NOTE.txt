@@ -2,8 +2,8 @@
 
 [幾乎該RSI進出點會在布林通道上下邊緣]
 做多　　　　　　　　做空
-RSI>20　buy　　　　 RSI<80　sell
-RSI>80　sell　　　　RSI<20　buy
+RSI>30　buy　　　　 RSI<70　sell
+RSI>70　sell　　　　RSI<30　buy
 
 防爆(停損100/停利120)
 手動賺 30點 就跑
