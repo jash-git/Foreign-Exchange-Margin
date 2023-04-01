@@ -9,7 +9,7 @@ https://www.oanda.com/bvi-ft/lab-education/technical_analysis/2-moving-averages-
 5Min圖 40MA慢線(藍)/5MA快線(紫)
 死亡交叉: 快線由上而下穿過慢線(Sell) + [靜止K棒完全慢線之下(顏色綠色) + MACD 柱狀體明顯0軸之下(小數點>2位) 過濾抖動]
 黃金交叉: 快線由下而上穿過慢線(Buy)  + [靜止K棒完全慢線之上(顏色紅色) + MACD 柱狀體明顯0軸之上(小數點>2位) 過濾抖動]
-30點止損/60點止贏 [1:2 ;算上交易費1:3]
+止損就設在進場前的最後一根反向K棒的最高/最低價;止贏就是止損的1.5倍
 
 PS.剝頭皮交易（scalping trade）如何過3條移動平均線進行的策略
 http://www.oanda.com/bvi-ft/lab-education/technical_analysis/scalping-trade/
