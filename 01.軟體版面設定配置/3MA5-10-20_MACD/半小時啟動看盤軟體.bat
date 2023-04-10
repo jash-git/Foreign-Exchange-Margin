@@ -9,15 +9,15 @@ REM 因此，执行这个命令时[%time:~3,2%]，会输出第3個字元（即�
 REM CMD(BAT)中 IF 判斷式要用 OR 運算 https://stackoverflow.com/questions/2143187/logical-operators-and-or-in-dos-batch
 
 set res=F
-if %time:~3,2%==03 set res=T
-if %time:~3,2%==33 set res=T
+if %time:~3,2%==00 set res=T
+if %time:~3,2%==30 set res=T
 
 if "%res%"=="T" (
 cls
 echo This time:%time%
 
 REM 執行外部程式
-start "" "C:\\Program Files\\MetaTrader 5\\terminal64.exe"
+start /max "" "C:\\Program Files\\MetaTrader 5\\terminal64.exe"
 
 REM 等待10分鐘
 timeout /t 600
