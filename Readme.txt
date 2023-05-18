@@ -2,6 +2,8 @@
 
 資料來源:
 [ https://www.metatrader5.com/en ]
+[ https://www.mql5.com/en / https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/mt5setup.exe?utm_source=web.installer&utm_campaign=mql5.welcome.open]
+[ https://www.fxtw168.com/ranks/#No1 ]
 [ https://www.youtube.com/watch?v=rYVyo4fk6Fk ]
 [ https://www.youtube.com/watch?v=ve51EZR_M5s ]
 [ https://www.youtube.com/watch?v=CHbzH4DPqds&list=PLYm8vevCQhbuABlEj_iwOZyoBhtpThKBf ]
@@ -9,7 +11,6 @@
 [ https://www.mql5.com/files/pdf/mql5_chinese.pdf ]
 [ https://www.yuantafutures.com.tw/UploadFile/leverage/leverageplatform/MoneyWin.pdf ]
 [ https://forex-eabuilder.com/wp-content/themes/storefront/download/User_Guide/Forex-eabuilder-guide-zh-v8.00.pdf ]
-[ https://www.mql5.com/en / https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/mt5setup.exe?utm_source=web.installer&utm_campaign=mql5.welcome.open]
 
 GITHUB: 
 
