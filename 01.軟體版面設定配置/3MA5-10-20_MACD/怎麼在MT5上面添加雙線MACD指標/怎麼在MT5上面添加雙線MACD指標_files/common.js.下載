@@ -1,0 +1,489 @@
+$(function(){
+	var waihui = $(".waihui").offset().left;
+	$(".waihui .sub-nav ul").css('left',waihui/1.3);
+	var huobi = $(".huobi").offset().left;
+	$(".huobi .sub-nav ul").css('left',huobi/1.5);
+	var gupiao = $(".gupiao").offset().left;
+	$(".gupiao .sub-nav ul").css('left',gupiao/1.5);
+	var qihuo = $(".qihuo").offset().left;
+	$(".qihuo .sub-nav ul").css('left',qihuo/1.5);
+	var guijinshu = $(".guijinshu").offset().left;
+	$(".guijinshu .sub-nav ul").css('left',guijinshu/1.4);
+	var zatan = $(".zatan").offset().left;
+	$(".zatan .sub-nav ul").css('left',zatan/1.3);
+	var qianbao = $(".qianbao").offset().left;
+	$(".qianbao .sub-nav ul").css('left',qianbao/1.2);
+
+	$(".nav-small-close").hide();
+	//返回顶部
+	$('#goBack').on('click', function() {
+        $('body, html').animate({scrollTop: 0}, 200);
+        return false;
+    });
+	
+	//顶部导航
+    $(".nav-small").click(function(){
+        $(this).find(".nav-child").slideToggle();
+        $(".nav-small-close").show();
+    });
+	var that = '';
+	$('.header .header-container .nav .nav-child > li').mouseover(function() {
+		that = this;
+		$(this).find('.dropdown-menu').stop().slideDown(200);
+	}).mouseout(function() {
+		$(that).find('.dropdown-menu').stop().slideUp(200);
+	});
+	$(".nav-small-close").click(function () {
+		$(".nav-child").css('display','none');
+		$(".nav-small-close").hide();
+	})
+	//左边广告
+	$('#CarouselRight').carousel({
+		interval : 3000,
+		pause:"hover",
+	})
+	
+	//左边侧边栏
+	$(".dock li").hover(function(){
+		$(this).addClass("active");
+	},function(){
+		$(this).removeClass("active");
+	})
+	
+	$("#head_user").bind("click",function(){
+		$(".login-after-child").toggle();
+	})
+	
+	$(".bottomInfo").animate({left: '0'}, "1000");
+	
+	
+	$("#gbookuserlogin").bind("click",function(){
+		$("#logindiv").show();
+	})
+	 
+	$("#head_login").bind("click",function(){
+		$("#logindiv").show();
+	})
+	
+	$("#Phonelogin").bind("click",function(){
+		$("#logindiv").show();
+	})
+	
+	$("#loginclose").bind("click",function(){
+		$("#logindiv").hide();
+	})
+	
+	
+	$(".topic-column span").click(function(){
+		$(this).parent().hide();
+	})
+	
+	
+	var yzmUrl = '/tp/index.php?s=Home/Index/verify/?'+Math.random();
+	$("#verifyCode").attr("src", yzmUrl);
+	
+	$('#tijiao-btn').click(function(){
+		$("#bottom_loading").show();
+		 var userdivuser = $("#user_txt").val();
+		 var userdivpassword = $("#pwd_txt").val();
+		 var code = $("#code_txt").val();
+		 
+		 if(userdivuser=="" || userdivpassword==""){
+		   swal("", "请填写完整的登录信息!", "error");
+		   return false;
+		 };
+		 
+		$.ajax({
+		   type: "POST",
+		   url: "/tp/index.php?s=Home/Index/indexlogin",
+		   dataType : 'json',
+		   data: {user : userdivuser , password : userdivpassword , code : code},
+		   success: function(d){
+			    $("#bottom_loading").hide();
+				if(d.status=="1"){
+				
+					if(d.status =="1" && d.api!==''){
+						//利用api实现同步登陆
+						var postUrl = d.api.split('ashx?')[0]+'ashx';
+						var postData = d.api.split('ashx?')[1];
+						$.ajax({
+							url : postUrl,
+							data : postData,
+							async: false, 
+							xhrFields: {withCredentials: true},
+							crossDomain: true,   //支持跨域 
+							type : 'post',
+							success : function(d){
+								
+							},
+							error : function(){
+								//swal("", "未知错误!", "error");
+							}
+						});
+				   }
+				   location.reload();
+				}else{
+					swal("", d.info, "error");
+					var code =  '/tp/index.php?s=Home/Index/verify/?'+Math.random();
+					$("#verifyCode").attr("src", code);
+				}
+		   },  
+		   error: function(){
+				//swal("", "未知错误!", "error");
+		   }
+		});
+		
+	});
+	
+	//退出
+	$(document).on('click','#logout',function(){
+		$.ajax({
+			url : "/tp/index.php?s=/Home/Index/logout",
+			type : 'post',
+			dataType : 'json',
+			success : function(d){
+				
+				if(d.status =="1" && d.api!==''){
+					//利用api实现同步登陆
+					var postUrl = d.api.split('ashx?')[0]+'ashx';
+					var postData = d.api.split('ashx?')[1];
+					$.ajax({
+						url : postUrl,
+						data : postData,
+						async: false, 
+						xhrFields: {withCredentials: true},
+						crossDomain: true,   //支持跨域 
+						type : 'post',
+						success : function(d){
+							
+						},
+						error : function(){
+							//swal("", "未知错误!", "error");
+						}
+					});
+			   }
+				location.reload();
+			},
+			error : function(){
+				//swal("", "未知错误!", "error");
+			}
+			
+		});
+	});
+	
+	commontraderajax("TotalGrowth","desc",1);
+	
+})
+
+//是否手机
+function isMobile() {
+	var userAgentInfo = navigator.userAgent;
+
+	var mobileAgents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+
+	var mobile_flag = false;
+
+	//根据userAgent判断是否是手机
+	for (var v = 0; v < mobileAgents.length; v++) {
+		if (userAgentInfo.indexOf(mobileAgents[v]) > 0) {
+			mobile_flag = true;
+			break;
+		}
+	}
+	var screen_width = window.screen.width;
+	var screen_height = window.screen.height;
+
+	//根据屏幕分辨率判断是否是手机
+	if (screen_width < 500 && screen_height < 800) {
+		mobile_flag = true;
+	}
+
+	return mobile_flag;
+};
+
+//验证码
+function verify(img){
+	img.src = '/tp/index.php?s=Home/Index/verify/?'+Math.random();
+}
+	
+//写cookies 
+function setCookie(name,value,time)
+{ 
+	var strsec = getsec(time); 
+	var exp = new Date(); 
+	exp.setTime(exp.getTime() + strsec*1); 
+	document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString(); 
+} 
+
+
+//读取cookies 
+function getCookie(name) 
+{ 
+	var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+ 
+	if(arr=document.cookie.match(reg))
+ 
+		return unescape(arr[2]); 
+	else 
+		return null; 
+} 
+
+//删除cookies 
+function delCookie(name) 
+{ 
+	var exp = new Date(); 
+	exp.setTime(exp.getTime() - 1); 
+	var cval=getCookie(name); 
+	if(cval!=null) 
+		document.cookie= name + "="+cval+";expires="+exp.toGMTString(); 
+} 
+
+
+function showlogindiv(){
+	$("#logindiv").show();
+}
+
+
+//TotalGrowth 成长率排序
+//LastTimeToTrade 最近交易排序 
+//TicketPercentage_Profit 盈利单占比排序
+//MaxRetracement 最大回撤排序
+//Order asc 是升序 desc 是降序
+function commontraderajax(resetval,Order,pagenum){
+	$("#preloaderbg").show();
+
+	var pagelength = pagenum*7;
+	var pageBegin = (pagenum -1) * 7;
+	var pageI = 0;
+	var echartsI = 0;
+	var pagetotal = 0;
+	
+	var arrnum = 0;  
+
+	var traderarr = new Array();
+	
+	$.ajax({
+	   type: "POST",
+	   url: "/tp/index.php?s=Home/Index/traderlistcache3/?timestampt="+(new Date()).getTime(),
+	   dataType : 'json',
+	   success: function(val){
+			$("#preloaderbg").hide();
+
+			var companybodytr = "";
+			var companybodytd = "";
+			
+			var arr = new Array(); 
+			pagetotal =val.data.length;
+			$(".find-more").text("加载更多( 共"+pagetotal+"个信号 )...");
+			$(".find-more-end").text("已加载全部信号( 共"+pagetotal+"个信号 )");
+			if(pagenum >= pagetotal%10){
+				$(".find-more").hide();
+				$(".find-more-end").show();
+			}else{
+				$(".find-more-end").hide();
+				$(".find-more").show();
+			}
+			
+			$(val.data).each(function(i,d){  			 //通过循环 配置成二维数组
+			
+				var TotalGrowth = d.TotalGrowth[0].replace(",","").replace("%","");  	//成长率
+				var LastTimeToTrade = d.LastTimeToTrade[0];  //最近交易
+				var TicketPercentage_Profit = d.TicketPercentage_Profit[0].replace(",","").replace("%","");//盈利单占比
+				var MaxRetracement = d.MaxRetracement[0].replace(",","").replace("%","");  //最大回撤
+					
+				var reset = new Array();
+				reset[0] = d.id; 
+				if(resetval == "TotalGrowth"){
+					reset[1] = parseFloat(TotalGrowth);
+				}else if(resetval == "MaxRetracement"){
+					reset[1] = parseFloat(MaxRetracement);
+				}else if(resetval == "TicketPercentage_Profit"){
+					reset[1] = parseFloat(TicketPercentage_Profit);
+				}else if(resetval == "LastTimeToTrade"){
+				
+					if(LastTimeToTrade.indexOf("分钟前") > 0){
+					   LastTimeToTrade =  parseFloat(LastTimeToTrade) *60;
+					}else if(LastTimeToTrade.indexOf("小时前") > 0){
+					   LastTimeToTrade =  parseFloat(LastTimeToTrade) *60*60;
+					}else if(LastTimeToTrade.indexOf("天前") > 0){
+					   LastTimeToTrade =  parseFloat(LastTimeToTrade) *60*60*24;
+					}else if(LastTimeToTrade.indexOf("周前") > 0){
+					   LastTimeToTrade =  parseFloat(LastTimeToTrade) *60*60*24*7;
+					}else{
+						LastTimeToTrade = parseFloat(LastTimeToTrade);
+					}
+					
+					reset[1] =LastTimeToTrade;
+				}
+				
+				arr[arrnum] = reset;
+				arrnum++;
+
+			})
+			
+			if(Order == "desc"){
+				traderarr = sortA(arr).reverse();
+			}else if(Order == "asc"){
+				traderarr = sortA(arr);
+			}
+			
+			$.each(traderarr,function(i,d){
+				$.each(val.data,function(dataI,obj){
+					if(d[0] == obj["id"]){
+					
+						if(pageI >= pageBegin && pageI < pagelength){
+						
+							var totalgrowth=obj.TotalGrowth[0];
+							var lasttimetotrade=obj.LastTimeToTrade[0];
+							var ticketpercentage_profit=obj.TicketPercentage_Profit[0];
+							var maxretracement=obj.MaxRetracement[0];
+							var totaltradedays=obj.TotalTradeDays[0];
+							
+							if(totalgrowth =="正无穷大"  || totalgrowth == "非数字"){
+							   totalgrowth = "0.00%";
+							};
+							if(lasttimetotrade =="正无穷大"  || lasttimetotrade == "非数字" || lasttimetotrade=="-前" ){
+							   lasttimetotrade ="暂无做单记录";
+							};
+							
+							if(maxretracement =="正无穷大"  || maxretracement == "非数字" ){
+							   maxretracement ="0.00%";
+							};
+							if(ticketpercentage_profit =="正无穷大"  || ticketpercentage_profit == "非数字" || ticketpercentage_profit == "0" ){
+							   ticketpercentage_profit ="0.00%";
+							};
+							
+							lasttimetotrade=lasttimetotrade.replace('-','');
+						
+							companybodytd= '<div class="subscription"><a href="/trader/'+obj.id+'.html" target="_blank" rel="nofollow"><div class="avatar"><img class="happPicture" src="'+obj.MyPhoto+'"></div><div class="txtcont"><div class="drillable">'+obj.signalname+'</div><div class="eventText"><span class="showOnSim">成长率：<strong>'+totalgrowth+'</strong>&nbsp;&nbsp;最近交易：<strong>'+lasttimetotrade+'</strong></span></div></div></a></div>';
+								
+							companybodytr += companybodytd;
+						
+						}
+						
+						pageI++;
+						
+					}else{
+						return true;
+					}
+				})
+			})
+			
+			$("#subscriptionlist").html(companybodytr);
+			
+
+	   },
+	   error: function(){
+			
+	   }
+	})
+}
+
+
+function sortA(arr){
+	for(var i=0;i<arr.length-1;i++){
+		for(var j=i+1;j<arr.length;j++){
+			//获取第一个值和后一个值比较
+			var curkey = arr[i][0];
+			var cur = arr[i][1];
+			if( parseFloat(cur) > parseFloat(arr[j][1]) ){
+				 // 因为需要交换值，所以会把后一个值替换，我们要先保存下来
+				var indexkey = arr[j][0];
+				var index = arr[j][1];
+				// 交换值
+				arr[j][0] = curkey;
+				arr[i][0] = indexkey;
+				
+				arr[j][1] = cur;
+				arr[i][1] = index;
+			}
+		}
+	}
+	return arr;
+}
+
+
+//转成时间 例：2018-08-08
+function formatDateTime(timeStamp) {   
+	var date = new Date();  
+	date.setTime(timeStamp * 1000);  
+	var y = date.getFullYear();      
+	var m = date.getMonth() + 1;      
+	m = m < 10 ? ('0' + m) : m;      
+	var d = date.getDate();      
+	d = d < 10 ? ('0' + d) : d;      
+	var h = date.getHours();    
+	h = h < 10 ? ('0' + h) : h;    
+	var minute = date.getMinutes();    
+	var second = date.getSeconds();    
+	minute = minute < 10 ? ('0' + minute) : minute;      
+	second = second < 10 ? ('0' + second) : second;     
+	return y + '-' + m + '-' + d;      
+};
+
+//转成时间 例：2018-08-08 18:18:18
+function formatDateTime2(timeStamp) {   
+	var date = new Date();  
+	date.setTime(timeStamp * 1000);  
+	var y = date.getFullYear();      
+	var m = date.getMonth() + 1;      
+	m = m < 10 ? ('0' + m) : m;      
+	var d = date.getDate();      
+	d = d < 10 ? ('0' + d) : d;      
+	var h = date.getHours();    
+	h = h < 10 ? ('0' + h) : h;    
+	var minute = date.getMinutes();    
+	var second = date.getSeconds();    
+	minute = minute < 10 ? ('0' + minute) : minute;      
+	second = second < 10 ? ('0' + second) : second;     
+	return y + '-' + m + '-' + d+' '+h+':'+minute+':'+second;      
+}; 
+
+
+
+
+//计算时差
+function diaplayTime(data) {
+	
+	var result = "";
+	var str = data;
+	//将字符串转换成时间格式
+	var timePublish = new Date(str);
+	var timeNow = new Date();
+	var minute = 1000 * 60;
+	var hour = minute * 60;
+	var day = hour * 24;
+	var month = day * 30;
+	var diffValue = timeNow - timePublish;
+	var diffMonth = diffValue / month;
+	var diffWeek = diffValue / (7 * day);
+	var diffDay = diffValue / day;
+	var diffHour = diffValue / hour;
+	var diffMinute = diffValue / minute;
+
+	if (diffValue < 0) {
+		//alert("错误时间");
+	}
+	else if (diffWeek > 1 ) {
+		result = timePublish.getFullYear()+"-";
+		result += timePublish.getMonth() + 1 + "-";
+		result += timePublish.getDate();
+		result += " "+timePublish.getHours()+":";
+		result += timePublish.getMinutes() + ":";
+		result += timePublish.getSeconds();
+	}
+	else if (diffDay > 1) {
+		result = parseInt(diffDay) + "天前";
+	}
+	else if (diffHour > 1) {
+		result = parseInt(diffHour) + "小时前";
+	}
+	else if (diffMinute > 1) {
+		result = parseInt(diffMinute) + "分钟前";
+	}
+	else {
+		result = "刚刚";
+	}
+	return result;
+	
+}

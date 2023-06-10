@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://www.gendan5.com/p/2019-05-27/72754.html -->
+<html lang="zh-TW" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>★怎麼在MT5上面添加雙線MACD指標? | 跟單網gendan5.com</title>
+    <meta name="Keywords" content="MT5,添加,双线MACD">
+    <meta name="description" content="MACD也是技术指标的一种。MACD称为指数平滑异同平均线，是从双指数移动平均线发展而来的，由快的指数移动平均线（EMA）减去慢的指数移动平均线。但是一般我们在MT5中直接在点击添加的都是单线MACD...">
+    	
+	 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit"> <!-- 极速内核 -->
+	
+	<link rel="shortcut icon" href="https://gdconfig.gendan5.com/Theme/images/favicon.ico">
+	
+	 <!-- 整站共同样式 -->
+	<link href="./怎麼在MT5上面添加雙線MACD指標_files/layui.css" rel="stylesheet">
+	<link href="./怎麼在MT5上面添加雙線MACD指標_files/sweet-alert.css" rel="stylesheet">
+	<link href="./怎麼在MT5上面添加雙線MACD指標_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./怎麼在MT5上面添加雙線MACD指標_files/font-awesome.min.css" rel="stylesheet">
+    <link href="./怎麼在MT5上面添加雙線MACD指標_files/common.css" rel="stylesheet">
+	<!-- 整站共同样式end -->
+	
+	<meta name="baidu-site-verification" content="code-jnY1k3csgQ">
+	
+	<!-- 百度统计 -->
+	<script src="./怎麼在MT5上面添加雙線MACD指標_files/push.js.下載"></script><script src="./怎麼在MT5上面添加雙線MACD指標_files/hm.js.下載"></script><script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?9ee0"+"96cbfb"+"50721"+"cd0f8"+"5a5303f"+"d5000";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+	
+	<script>
+	(function(){
+		var bp = document.createElement('script');
+		var curProtocol = window.location.protocol.split(':')[0];
+		if (curProtocol === 'https') {
+			bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+		}
+		else {
+			bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+		}
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(bp, s);
+	})();
+	</script>
+
+
+    <link href="./怎麼在MT5上面添加雙線MACD指標_files/infomain.css" rel="stylesheet">
+    <link href="./怎麼在MT5上面添加雙線MACD指標_files/topic.css" rel="stylesheet">
+    <script type="application/ld+json">
+        {
+            "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+            "@id": "https://www.gendan5.com/p/2019-05-27/72754.html",
+            "appid": "1586198347038357",
+            "title": "★怎么在MT5上面添加双线MACD指标?",
+            "images": [
+                "https://www.gendan5.com/Theme/images/headpic.png",
+            ], //请在此处添加希望在搜索结果中展示图片的url，可以添加0个、1个或3个url
+            "pubDate": "2019-05-27T17:02:37" // 需按照yyyy-mm-ddThh:mm:ss格式编写时间，字母T不能省去
+        }
+    </script>
+
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./怎麼在MT5上面添加雙線MACD指標_files/m=el_main_css"></head>
+<body>
+
+	<!--[if IE]>
+	  <style type="text/css">
+			.hero-ltie9-box,
+			.hero-ltie9-wrap{
+			  position: fixed;
+			  width: 100%;
+			  top: 0;
+			  left: 0;
+			  height: 100%;
+			}
+			.hero-ltie9-wrap{
+				z-index: 999999;
+			}
+			.hero-ltie9 {
+				height: 714px;
+				text-align: center;
+			}
+	 
+			.hero-ltie9-text {
+				margin-top: 202px;
+				margin-bottom: 55px;
+				font-size: 18px;
+				color: #6a849c;
+				line-height: 1.7;
+			}
+	 
+			.hero-ltie9-img a {
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+				margin-right: 34px;
+			}
+	 
+			.hero-ltie9-img span {
+				display: block;
+				margin-top: 10px;
+				color: #adaaac;
+				font-size: 17px;
+			}
+			@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+			/* IE10+ CSS styles go here */
+				.hero-ltie9-box,
+				.hero-ltie9-wrap{
+					display:none;
+				}
+			}
+		</style>
+		
+	    <div id="J_lteie8" class="hero-ltie9-wrap">
+			<div style="background: #fff;" class="hero-ltie9-box">
+				<div class="hero-ltie9">
+					<div class="hero-ltie9-text">
+						<p>您使用的浏览器版本过低啦！</p>
+	 
+						<p>赶快去追逐他们的脚步吧~</p>
+					</div>
+					<div class="hero-ltie9-img">
+						<a href="https://www.google.cn/chrome/" target="_blank">
+							<img src="/Theme/images/chrome.png">
+							<span>Chrome</span>
+						</a>
+						<a href="https://www.firefox.com.cn/" target="_blank">
+							<img src="/Theme/images/firefox.png">
+							<span>Firefox</span>
+						</a>
+						<a href="https://www.apple.com/cn/safari/" target="_blank">
+							<img src="/Theme/images/safari.png">
+							<span>Safari</span>
+						</a>
+						<a href="https://browser.qq.com" target="_blank">
+							<img src="/Theme/images/qq.png">
+							<span>QQ浏览器</span>
+						</a>
+						<a href="https://browser.360.cn/ee/" target="_blank">
+							<img src="/Theme/images/360.png">
+							<span>360</span>
+						</a>
+					</div>
+					<div class="hero-ltie9-text">
+						<p>如果您正在使用360浏览器浏览，就请您切换一下页面模式。什么？不知道切换？百度啊！~</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	<![endif]-->
+	<style>
+
+	</style>
+	<div class="nav-small-close" style="position: fixed;width: 100%;height: 100%;z-index: 10000;top: 0;left: 0;background: none;display: none;"></div>
+	<div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky">
+		<div class="main-header" style="position: fixed; top: 0px;">
+			<div class="header">
+				<div class="header-container clearfix">
+					<div class="header-logo"><a href="https://www.gendan5.com/"></a></div>
+					<div class="nav">
+						<ul class="nav-child clearfix">
+							<li class="active index">
+								<a href="https://www.gendan5.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">首頁</font></font></a></li>
+							<li class="waihui">
+								<a href="https://www.gendan5.com/topic.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">外匯</font></font><i class="icon-sort-up"></i></a>
+								<div class="sub-nav">
+									<ul style="left: 213.846px;">
+										<li><a target="_blank" href="https://www.gendan5.com/operation.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MT4</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/mt5.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MT5</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/terminology.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">專業術語</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/tech.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">技術面研究</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/nonfarmpayroll.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">非農數據</font></font></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="huobi">
+								<a href="https://www.gendan5.com/Currencypage.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">貨幣</font></font><i class="icon-sort-up"></i></a>
+								<div class="sub-nav">
+									<ul style="left: 230.667px;">
+										<li><a target="_blank" href="https://www.gendan5.com/currencyworld.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">貨幣符號</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/currencycode.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">貨幣代碼</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/exrate.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">匯率查詢</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/decision/usd.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">利率決議</font></font></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="gupiao">
+								<a href="https://www.gendan5.com/Stockpage.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">股票</font></font><i class="icon-sort-up"></i></a>
+								<div class="sub-nav">
+									<ul style="left: 276px;">
+										<li><a target="_blank" href="https://www.gendan5.com/topic/lcSearch.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">股票代碼</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/Ashares.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A股開戶</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/USstock.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">美股開戶</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/HongKongstock.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">港股開戶</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/Stocklist.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">證券公司</font></font></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="qihuo">
+								<a href="https://www.gendan5.com/futures.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">期貨</font></font><i class="icon-sort-up"></i></a>
+								<div class="sub-nav">
+									<ul style="left: 321.333px;">
+										<li><a target="_blank" href="https://www.gendan5.com/cf/af.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">農產品期貨</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/cf/mf.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">金屬期貨</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/cf/ef.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">能源期貨</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/cf/chf.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">化工期貨</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/ff/sf.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">股指期貨</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/ff/if.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">利率期貨</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/fc.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">期貨公司</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/fe.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">期貨交易所</font></font></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="zhishu">
+								<a href="https://www.gendan5.com/zs.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">指數</font></font><i class="icon-sort-up"></i></a>
+								<div class="sub-nav">
+									<ul>
+										<li><a target="_blank" href="https://www.gendan5.com/zs/hsi.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">恆生指數</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/zs/000001.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上證指數</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/zs/a50.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">富時中國A50指數</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/zs/djia.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">道瓊斯指數</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/zs/n225.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">日經指數</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/zs/spx.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">標普500指數</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/zs/diniw.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">美元指數</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/zs/nasdaq.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">納斯達克指數</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/zs/gdaxi.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">德國dax30指數</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/zs/399006.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">創業板指</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/zs/399001.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">深證指數</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/zs/399905.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中證指數</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/zs/399005.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中小企業100指數</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/zs/hscei.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">國企指數</font></font></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="guijinshu">
+								<a href="https://www.gendan5.com/nmetal.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">貴金屬</font></font><i class="icon-sort-up"></i></a>
+								<div class="sub-nav">
+									<ul style="left: 441.429px;">
+										<li><a target="_blank" href="https://www.gendan5.com/nmetal/gold.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">黃金</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/nmetal/silver.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">白銀</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/nmetal/platinum.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">鉑金</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/nmetal/palladium.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">鈀金</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/nmetal/ruthenium.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">釕</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/nmetal/rhodium.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">銠</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/nmetal/osmium.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">鋨</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/nmetal/iridium.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">銥</font></font></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="zatan">
+								<a href="https://www.gendan5.com/topic/businessnews.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">金融雜談</font></font><i class="icon-sort-up"></i></a>
+								<div class="sub-nav">
+									<ul style="left: 538.462px;">
+										<li><a target="_blank" href="https://www.gendan5.com/topic/businessNews/JSsoft.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">財經軟件</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/topic/businessNews/JScomp.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">金融公司</font></font></a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/topic/businessNews/JSpay.html">支付平台</a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/topic/businessNews/JScard.html">金融卡</a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/topic/businessNews/JSbank.html">银行卡</a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/topic/businessNews/JScar.html">保险</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="qianbao">
+								<a href="https://www.gendan5.com/wallet.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">電子錢包</font></font><i class="icon-sort-up"></i></a>
+								<div class="sub-nav">
+									<ul style="left: 663.333px;">
+										<li><a target="_blank" href="https://www.gendan5.com/wallet/PayPal.html">PayPal</a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/wallet/Skrill.html">Skrill</a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/wallet/PerfectMoney.html">PerfectMoney</a></li>
+										<li><a target="_blank" href="https://www.gendan5.com/wallet/WebMoney.html">WebMoney</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="header-right">
+						<div class="header-icon">
+							<ul class="clearfix">
+									<li class="icon-searchs"><a href="https://www.gendan5.com/search/" target="_blank"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></span></a></li>
+							</ul>
+						</div>
+					
+					</div>
+					<div class="nav-small">
+						<a href="javascript:;"><i class="icon-th-large" style="margin-left: 5px"></i></a>
+						<ul class="nav-child clearfix">
+								<li class="active index">
+									<a href="https://www.gendan5.com/">首页</a>
+								</li>
+								<li>
+									<a href="https://www.gendan5.com/trader.html" target="_blank">GD5榜单</a>
+								</li>
+								<li>
+									<a href="https://www.gendan5.com/topic.html" target="_blank">外汇</a>
+								</li>
+								<li>
+									<a href="https://www.gendan5.com/Currencypage.html" target="_blank">货币</a>
+								</li>
+								<li>
+									<a href="https://www.gendan5.com/Stockpage.html" target="_blank">股票</a>
+								</li>
+								<li>
+									<a href="https://www.gendan5.com/futures.html" target="_blank">期货</a>
+								</li>
+								<li>
+									<a href="https://www.gendan5.com/zs.html" target="_blank">指数</a>
+								</li>
+								<li>
+									<a href="https://www.gendan5.com/nmetal.html" target="_blank">贵金属</a>
+								</li>
+								<li>
+									<a href="https://www.gendan5.com/topic/businessnews.html" target="_blank">金融杂谈</a>
+								</li>
+								<li>
+									<a href="https://www.gendan5.com/wallet.html" target="_blank">电子钱包</a>
+								</li>
+								<li>
+									<a href="https://www.gendan5.com/search/" target="_blank"> <i class="icon-search"></i> 搜索</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+
+<div class="container pad-top20 pad-bottom20" id="content">
+
+    <div class="row">
+
+        <div class="main-mid">
+
+            <!--            <div class="index_p1 ad_p1" style="margin-bottom: 20px;"></div>-->
+
+            <div class="contentleft">
+
+                                <div class="column-title">
+                    <i class="icon-map-marker"></i>
+                    <span class="column-title-text weight-bold marker"> <a href="https://www.gendan5.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">首頁</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/ </font></font><a href="https://www.gendan5.com/mt5.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MT5使用教程</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/ ★怎麼在MT5上面添加雙線MACD指標?</font></font></span>
+                </div>
+
+                <div class="contentmain content-wrapper">
+
+                    <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">★怎麼在MT5上面添加雙線MACD指標?</font></font></h1>
+                    <div class="content-font">
+                        <div class="am-cf author-panel">
+                            <div class="author">
+                                                                <span class="am-fl" "=""><abbr class="time"><i class="icon-user"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&nbsp;編輯：付韓</font></font></abbr></span>
+                                
+
+                                
+                                <span class="am-fl"><abbr class="time"><i class="icon-time"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&nbsp;發佈時間：2019-05-27 17:02:37</font></font></abbr></span>
+
+                                                                <span class="am-fl"><abbr class="time"><i class="icon-tags"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&nbsp;標籤：</font></font><a href="https://www.gendan5.com/tagslist/MT5/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MT5</font></font></a><a href="https://www.gendan5.com/tagslist/%E6%B7%BB%E5%8A%A0/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加</font></font></a><a href="https://www.gendan5.com/tagslist/%E5%8F%8C%E7%BA%BFMACD/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">雙線MACD</font></font></a></abbr></span>
+
+                                
+                                <span class="am-fl"><abbr class="time"><i class="icon-eye-open"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&nbsp;瀏覽：</font></font><strong id="hits"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8866</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">次</font></font></abbr></span>
+
+                            </div>
+                        </div>
+
+                        
+                        <section class="summary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">摘要：MACD也是技術指標的一種。</font><font style="vertical-align: inherit;">MACD稱為指數平滑異同平均線，是從雙指數移動平均線發展而來的，由快的指數移動平均線（EMA）減去慢的指數移動平均線。</font><font style="vertical-align: inherit;">但是一般我們在MT5中直接在點擊添加的都是單線MACD......</font></font></section>
+
+                        <div>
+                            <section class="textblock"><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	MACD也是技術指標的一種。</font><font style="vertical-align: inherit;">MACD稱為指數平滑異同平均線，是從雙指數移動平均線發展而來的，由快的指數移動平均線（EMA）減去慢的指數移動平均線。</font><font style="vertical-align: inherit;">但是一般我們在MT5中直接在點擊添加的都是單線MACD，如下圖所示：
+</font></font></p>
+<p>
+	<img src="./怎麼在MT5上面添加雙線MACD指標_files/5ceba7e2a4083.png" alt=""> 
+</p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	很多投資者都是在網上下載雙線MACD，今天小編教大家一個新技能，直接在MT5中添加雙線MACD。
+</font></font></p>
+<p>
+	<br>
+</p>
+<h2 class="class1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	MT5怎麼添加雙線MACD
+</font></font></h2>
+<p>
+	<br>
+</p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	一：在</font></font><span style="color:#E53333;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">導航欄找到指標，然後可以看到震盪一欄，打開找到MACD指標</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，點擊鼠標右鍵，選擇“</font></font><span style="color:#E53333;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加到圖表</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">”
+</font></font></p>
+<p>
+	<img src="./怎麼在MT5上面添加雙線MACD指標_files/5ceba9791e848.png" alt=""> 
+</p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	頁面沒有導航欄的話可以同時按住</font></font><strong><span style="color:#E53333;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ctrl+N</font></font></span></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，或者在</font></font><span style="color:#E53333;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看欄找到導航</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。
+</font></font></p>
+<p>
+	<img src="./怎麼在MT5上面添加雙線MACD指標_files/5cebaa07a4083.png" alt=""> 
+</p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	二：根據自己的喜好</font></font><span style="color:#E53333;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">設置參數</font></font></span> 
+</p>
+<p>
+	<img src="./怎麼在MT5上面添加雙線MACD指標_files/5cebaa626ea05.png" alt=""> 
+</p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	三：點擊</font></font><span style="color:#E53333;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加級別</font></font></span> 
+</p>
+<p>
+	<img src="./怎麼在MT5上面添加雙線MACD指標_files/5cebaaa9dd40a.png" alt=""> 
+</p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	四：</font></font><span style="color:#E53333;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加一條取值為“0”的級別，設置級別風格</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，點擊確定
+</font></font></p>
+<p>
+	<img src="./怎麼在MT5上面添加雙線MACD指標_files/5cebab1481b32.png" alt=""> 
+</p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	五：在指標欄可以看到走向一欄，然後找到</font></font><strong><span style="color:#E53333;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Moving Average</font></font></span></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，鼠標左鍵按住往MACD圖表中拖
+</font></font></p>
+<p>
+	<img src="./怎麼在MT5上面添加雙線MACD指標_files/5cebaba1aba95.png" alt=""> 
+</p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	六：拖到圖表中就會跳出設置參數的框框，</font></font><span style="color:#E53333;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">階段為9，轉換為0 ，方法設置為Simple，應用到選擇最先指標數據</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，再點擊確定。</font></font><br>
+<img src="./怎麼在MT5上面添加雙線MACD指標_files/5cebac293d090.png" alt=""> 
+</p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	這樣我們就添加好雙線MACD啦！
+</font></font></p>
+<p>
+	<img src="./怎麼在MT5上面添加雙線MACD指標_files/5cebacaf8d24d.png" alt=""> 
+</p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	小編看到了一篇在MT4添加雙線MACD的文章，有興趣的小伙伴點擊&gt;&gt;&gt;</font></font><a href="http://www.fx61.com/faq/muniu/187.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">怎麼在MT4上面添加雙線MACD指標？</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt;&lt;&lt;
+</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	因為MT5中的常用指標大多都是英文，小編整理了一篇常用指標中英文對照，用力戳&gt;&gt;&gt; </font></font><a href="http://www.gendan5.com/p/2019-04-25/68622.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MT5中常用的技術指標中英文對照</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt;&lt;&lt;
+</font></font></p>
+<div style="text-align:center;">
+	<strong style="font-family:微软雅黑, 宋体;font-size:16px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-------點擊“</font></font><a href="http://www.gendan5.com/mt5.html" target="_blank"></a><a href="https://www.gendan5.com/mt5.html" title="" target="_blank" class="style-a"></a><a href="https://www.gendan5.com/mt5.html" target="_blank" class="inhref"></a><a href="https://www.gendan5.com/mt5.html" title="" target="_blank" class="style-a"></a><a href="https://www.gendan5.com/mt5.html" target="_blank" class="inhref"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MT5使用教程</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">”進入跟單網GenDan5 的MT5專欄---------</font></font></strong> 
+</div></section>
+                            <section class="article-footer-label"><div><div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本站部分文章基於互聯網的整理，我們會把真正“有用/優質”的文章整理提供給瀏覽者。</font><font style="vertical-align: inherit;">如果文章所有者並不想本站轉載其文章，請郵件: </font></font><img src="./怎麼在MT5上面添加雙線MACD指標_files/Law@gendan5.png" style="padding:0px; margin:0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，收到郵件後我們即刻回复，並即刻處理。</font></font></div></div></section>
+                        </div>
+
+
+                        <div class="ad_p2_mobile" style="margin-bottom: 20px;"><div class="show-tags01"><span>广告</span></div><a href="https://www.gendan5.com/p/2019-05-27/undefined" target="_blank"><img src="https://www.gendan5.com/p/2019-05-27/72754.html" style="width: 100%; height: 60px;"></a></div>
+
+                        
+                        <div class="article__related">
+                            <div class="article__related__heading"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相關文章</font></font></div>
+                            <ul class="article__related__list">
+
+                                                                    <li class="related-post">
+                                        <a target="_blank" href="https://www.gendan5.com/p/2023-06-08/510391.html" class="related-post__title" title="在mt5上怎麼看一個品種週末是否交易？"><i class="icon-angle-right" style="margin-right: 5px;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在mt5上怎麼看一個品種週末是否交易？</font></font></a>
+                                        <div class="related-post__meta">
+                                            <div class="related-post__meta__item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文/ 唐佳</font></font></div>
+                                            <div class="related-post__meta__item">
+                                                <span class="related-post__meta__item__text"><i class="icon-time" style="margin-right: 5px;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2023-06-08 09:44:08</font></font></span>
+                                            </div>
+                                        </div>
+                                    </li>                                    <li class="related-post">
+                                        <a target="_blank" href="https://www.gendan5.com/p/2023-06-06/510091.html" class="related-post__title" title="在mt5訂單上交易量怎麼會顯示5K？"><i class="icon-angle-right" style="margin-right: 5px;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在mt5訂單上交易量怎麼會顯示5K？</font></font></a>
+                                        <div class="related-post__meta">
+                                            <div class="related-post__meta__item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文/ 唐佳</font></font></div>
+                                            <div class="related-post__meta__item">
+                                                <span class="related-post__meta__item__text"><i class="icon-time" style="margin-right: 5px;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2023-06-06 09:38:36</font></font></span>
+                                            </div>
+                                        </div>
+                                    </li>                                    <li class="related-post">
+                                        <a target="_blank" href="https://www.gendan5.com/p/2023-06-05/509976.html" class="related-post__title" title="在mt5上有幾種方式可以設置追踪止損？"><i class="icon-angle-right" style="margin-right: 5px;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在mt5上有幾種方式可以設置追踪止損？</font></font></a>
+                                        <div class="related-post__meta">
+                                            <div class="related-post__meta__item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文/ 唐佳</font></font></div>
+                                            <div class="related-post__meta__item">
+                                                <span class="related-post__meta__item__text"><i class="icon-time" style="margin-right: 5px;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2023-06-05 11:01:09</font></font></span>
+                                            </div>
+                                        </div>
+                                    </li>                                    <li class="related-post">
+                                        <a target="_blank" href="https://www.gendan5.com/p/2023-06-02/509811.html" class="related-post__title" title="在mt5上想看陽/陰柱準確的點位怎麼查看？"><i class="icon-angle-right" style="margin-right: 5px;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在mt5上想看陽/陰柱準確的點位怎麼查看？</font></font></a>
+                                        <div class="related-post__meta">
+                                            <div class="related-post__meta__item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文/ 唐佳</font></font></div>
+                                            <div class="related-post__meta__item">
+                                                <span class="related-post__meta__item__text"><i class="icon-time" style="margin-right: 5px;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2023-06-02 11:02:18</font></font></span>
+                                            </div>
+                                        </div>
+                                    </li>                                    <li class="related-post">
+                                        <a target="_blank" href="https://www.gendan5.com/p/2023-05-30/509423.html" class="related-post__title" title="在mt5上怎麼看交易訂單的創建時間？"><i class="icon-angle-right" style="margin-right: 5px;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在mt5上怎麼看交易訂單的創建時間？</font></font></a>
+                                        <div class="related-post__meta">
+                                            <div class="related-post__meta__item"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文/ 唐佳</font></font></div>
+                                            <div class="related-post__meta__item">
+                                                <span class="related-post__meta__item__text"><i class="icon-time" style="margin-right: 5px;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2023-05-30 10:05:38</font></font></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="main-right">
+            
+
+            <!-- 广告 -->
+            <div class="right-ad">
+
+                <div class="ad_p2_pc"><div class="show-tags01"><span>广告</span></div> <a rel="nofollow" href="https://www.gendan5.com/p/2019-05-27/undefined" target="_blank"><img src="https://www.gendan5.com/p/2019-05-27/72754.html"></a></div>
+
+                <div class="btn-tg-rz clearfix">
+                    <a class="btn-sqrz" href="https://www.gendan5.com/user/login/" target="_blank" rel="nofollow">投稿</a>
+                    <a class="btn-yjtg" href="https://www.gendan5.com/user/reg/" target="_blank" rel="nofollow">申请专栏</a>
+                </div>
+
+            </div>
+
+
+
+            <div class="topicright">
+
+                <div class="main-right-topiclist">
+
+                    <div class="column-title">
+                        <span class="column-title-icon"></span>
+                        <span class="column-title-text weight-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">專題導航</font></font></span>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <a rel="nofollow" href="https://www.gendan5.com/operation.html" target="_blank" title="MT4">
+                                <img src="./怎麼在MT5上面添加雙線MACD指標_files/638ee44b0789c.png" alt="MT4">
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://www.gendan5.com/mt5.html" target="_blank" title="MT5">
+                                <img src="./怎麼在MT5上面添加雙線MACD指標_files/638ee45f11ee4.png" alt="MT5">
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://www.gendan5.com/terminology.html" class="" title="專業術語" target="_blank">
+                                <img src="./怎麼在MT5上面添加雙線MACD指標_files/638ee47bd9d56.png" alt="專業術語">
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://www.gendan5.com/tech.html" target="_blank" title="技術面研究">
+                                <img src="./怎麼在MT5上面添加雙線MACD指標_files/638ee491cfbbe.png" alt="技術面研究">
+                            </a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://www.gendan5.com/nonfarmpayroll.html" target="_blank" title="非農數據">
+                                <img src="./怎麼在MT5上面添加雙線MACD指標_files/638ee5460168b.png" alt="非農數據">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="main-right-topic" style="margin-top: 0px">
+
+                <div class="column-title">
+                    <span class="column-title-icon"></span>
+                    <span class="column-title-text weight-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最新文章推薦</font></font></span>
+                    <a href="https://www.gendan5.com/topic.html" target="_blank" class="link" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看更多</font></font><span class="icon-double-angle-right"></span></a>
+                </div>
+
+                <ul class="b_box4">
+                    <!-- $rightmain['cid']  = array('not in','1,3,7,12');-->
+                    
+                                            <li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></em><a href="https://www.gendan5.com/p/2023-06-08/510500.html" target="_blank" rel="nofollow" title="外匯逼空和軋空類似嗎？"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">外匯逼空和軋空類似嗎？</font></font></a><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	今天，小編想給大家介紹外匯逼空和軋空的相關知識，下面我們一起去了解一下吧！</font><font style="vertical-align: inherit;">如果大家要了解更多有關外彙的知識，點擊以下鏈接&gt;&gt;&gt;&gt;&gt;&gt;外匯中的加倉、補倉、平倉、開倉分別是什麼意思？</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">外匯逼空和軋空類似嗎......</font></font></p></li>
+                                                <li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></em><a href="https://www.gendan5.com/p/2023-06-07/510383.html" target="_blank" rel="nofollow" title="TRIX是什麼類型的指標？"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TRIX是什麼類型的指標？</font></font></a></li>
+                                                <li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></em><a href="https://www.gendan5.com/p/2023-06-07/510225.html" target="_blank" rel="nofollow" title="在mt4上怎麼查看美元指數的交易時間？"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在mt4上怎麼查看美元指數的交易時間？</font></font></a></li>
+                                                <li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></em><a href="https://www.gendan5.com/p/2023-06-06/510180.html" target="_blank" rel="nofollow" title="外匯交易中重倉等於梭哈嗎？"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">外匯交易中重倉等於梭哈嗎？</font></font></a></li>
+                                                <li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></em><a href="https://www.gendan5.com/p/2023-06-05/509975.html" target="_blank" rel="nofollow" title="在mt4上怎麼查看交易訂單是否收取了手續費？"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在mt4上怎麼查看交易訂單是否收取了手續費？</font></font></a></li>
+                                                <li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6</font></font></em><a href="https://www.gendan5.com/p/2023-06-02/509961.html" target="_blank" rel="nofollow" title="MOM指標和MTM指標有什麼關係？"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MOM指標和MTM指標有什麼關係？</font></font></a></li>
+                                                <li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></em><a href="https://www.gendan5.com/p/2023-06-01/509795.html" target="_blank" rel="nofollow" title="在外匯中有槓桿和無槓桿的賬戶是怎麼算交易預付款的？"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在外匯中有槓桿和無槓桿的賬戶是怎麼算交易預付款的？</font></font></a></li>
+                                                <li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8</font></font></em><a href="https://www.gendan5.com/p/2023-06-01/509682.html" target="_blank" rel="nofollow" title="在mt4上怎麼查看USDCNH貨幣對的合約細則？"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在mt4上怎麼查看USDCNH貨幣對的合約細則？</font></font></a></li>
+                                                <li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9</font></font></em><a href="https://www.gendan5.com/p/2023-05-31/509570.html" target="_blank" rel="nofollow" title="RVI指標和RSI指標在mt4中的名稱分別是什麼？"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RVI指標和RSI指標在mt4中的名稱分別是什麼？</font></font></a></li>
+                                                <li><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></em><a href="https://www.gendan5.com/p/2023-05-31/509553.html" target="_blank" rel="nofollow" title="在mt4上怎麼交易一手美元指數？"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在mt4上怎麼交易一手美元指數？</font></font></a></li>
+                        
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+	<ul class="talk">
+<!--		<li><a href="http://wpa.qq.com/msgrd?v=3&uin=0&site=qq&menu=yes" target="_blank"  rel="nofollow" class="nico-kf"><span class="nico"></span>客服</a></li>-->
+		<li><a href="javascript:;" class="nico-back" id="goBack"><span class="nico"></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">回頂部</font></font></a></li>
+	</ul>
+	<div id="preloaderbg" style="display: none;">
+		<div class="preloader" id="preloader">
+			<span class="loading-logo"></span>
+			<svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			  <g id="circle" class="g-circles g-circles--v1">
+				  <circle id="12" transform="translate(35, 16.698730) rotate(-30) translate(-35, -16.698730) " cx="35" cy="16.6987298" r="10"></circle>
+				  <circle id="11" transform="translate(16.698730, 35) rotate(-60) translate(-16.698730, -35) " cx="16.6987298" cy="35" r="10"></circle>
+				  <circle id="10" transform="translate(10, 60) rotate(-90) translate(-10, -60) " cx="10" cy="60" r="10"></circle>
+				  <circle id="9" transform="translate(16.698730, 85) rotate(-120) translate(-16.698730, -85) " cx="16.6987298" cy="85" r="10"></circle>
+				  <circle id="8" transform="translate(35, 103.301270) rotate(-150) translate(-35, -103.301270) " cx="35" cy="103.30127" r="10"></circle>
+				  <circle id="7" cx="60" cy="110" r="10"></circle>
+				  <circle id="6" transform="translate(85, 103.301270) rotate(-30) translate(-85, -103.301270) " cx="85" cy="103.30127" r="10"></circle>
+				  <circle id="5" transform="translate(103.301270, 85) rotate(-60) translate(-103.301270, -85) " cx="103.30127" cy="85" r="10"></circle>
+				  <circle id="4" transform="translate(110, 60) rotate(-90) translate(-110, -60) " cx="110" cy="60" r="10"></circle>
+				  <circle id="3" transform="translate(103.301270, 35) rotate(-120) translate(-103.301270, -35) " cx="103.30127" cy="35" r="10"></circle>
+				  <circle id="2" transform="translate(85, 16.698730) rotate(-150) translate(-85, -16.698730) " cx="85" cy="16.6987298" r="10"></circle>
+				  <circle id="1" cx="60" cy="10" r="10"></circle>
+			  </g>
+			  <use xlink:href="#circle" class="use"></use>
+			</svg>
+		</div>
+   </div>
+
+	
+	<div id="footer" class="footer">
+	   <div class="container">
+		<div class="lf">
+		 <div>
+		  <a href="https://www.gendan5.com/about.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">關於我們</font></font></a>
+		  <a href="https://www.gendan5.com/terms.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用條款</font></font></a>
+		  <a href="https://www.gendan5.com/privacy.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">隱私政策</font></font></a>
+<!--		  <a href="/help.html" target="_blank">新人引导</a>-->
+		  <a href="https://www.gendan5.com/sitemap.xml" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">網站地圖</font></font></a>
+		 </div>
+		 <div class="copyright">
+		  <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">風險警示：跟單網僅為外匯投資者交易賬戶信息的展示平台，交易資料展示與對交易信息的使用均為用戶自主行為，跟單網不對行為結果負責。</font></font></p>
+		  <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Copyright © 2023,</font></font><a target="_blank" href="http://www.miitbeian.gov.cn/" style="display: inline-block;color: #7a7a7a;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">湘ICP備18011229號</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">  聯繫我們：service@gendan5.com</font></font></p>
+		  <div class="_x"></div>
+		  <div class="friendship">
+		   <ul>
+		   			   <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版權所有：© 2023 跟單網www.gendan5.com</font></font></li>
+			   		   </ul>
+		  </div>
+		 </div>
+		</div>
+	   </div>
+	</div>
+	
+	<!--  登录 -->
+	<div class="wscn-dynamic-dialog-wrapper" style="display:none;" id="logindiv">
+	
+		<div class="wscn-dynamic-dialog"> 
+			<div class="wscn-dialog-pane" style="">
+				<div class="wscn-dialog-pane__header" style="border-bottom: 1px solid rgb(220, 220, 220);"><!----> 
+					<div class="wscn-dialog-pane__header__title">登录</div> 
+					<div class="wscn-dialog-pane__header__btn" id="loginclose"><i class="icon-remove"></i></div>
+				</div> 
+				<div class="wscn-dialog-pane__body">
+					<div class="login-dialog">
+						<div class="wscn-form login-form">
+							<div class="wscn-form-item login-form__item">
+								<div class="wscn-input login-input"> 
+									<input type="text" name="identity" width="80%" class="wscn-input__inner" style="width: 80%;" id="user_txt" placeholder="邮箱/手机号"> 
+								</div> 
+							</div> 
+							<div class="wscn-form-item login-form__item">
+								<div class="wscn-input login-input">
+									<input type="password" width="100%" class="wscn-input__inner" style="width: 100%;" name="password" id="pwd_txt" placeholder="密码" autocomplete="new-password"> 
+								</div> 
+								<div class="wscn-form-item__error-msg" style="display: none;"></div>
+							</div> 
+							<div class="wscn-input register-input"><!----> 
+								<input type="text" id="code_txt" name="code" width="80" maxlength="6" class="wscn-input__inner" placeholder="验证码"> 
+								<div class="wscn-input__postpend">
+									<div class="auth-verify">
+										<div class="auth-verify__btn"><img src="./怎麼在MT5上面添加雙線MACD指標_files/index.php" onclick="verify(this);" id="verifyCode" class="captcha code-img" style="vertical-align: middle;margin-left:5px; width:124px; height:40px;    position: absolute;left: -5px;	top: -50px;" alt="请输入验证码,看不清楚？点击换一个"></div> 
+									</div>
+								</div>
+							</div>
+						</div> 
+						<div>
+							<div class="login-dialog-btn" id="tijiao-btn">登录</div> 
+							<div class="auth-third-parties">
+								<div class="third-party-vr"></div> 
+								<div class="third-party-vr"></div> 
+							</div> 
+							<div class="login-bottom-line">
+								还没有跟单网账号？<span class="login-bottom-line__link"><a href="http://my.gendan5.com/Register.aspx" target="_blank">立即注册</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>        
+		</div>
+		
+	</div>
+	
+		
+	<script src="./怎麼在MT5上面添加雙線MACD指標_files/jquery.min.js.下載"></script>
+	<script src="./怎麼在MT5上面添加雙線MACD指標_files/bootstrap.min.js.下載"></script>
+    <script src="./怎麼在MT5上面添加雙線MACD指標_files/jquery.nicescroll.js.下載"></script> <!--  滚动条 -->
+	<script src="./怎麼在MT5上面添加雙線MACD指標_files/sweet-alert.js.下載"></script>	<!--  提示框 -->
+    <script src="./怎麼在MT5上面添加雙線MACD指標_files/jquery.fly.min.js.下載"></script> <!--  购物车抛物线效果 -->
+	<script src="./怎麼在MT5上面添加雙線MACD指標_files/common.js.下載"></script>
+
+<script>
+    $(function(){
+
+        $.ajax({
+            type: "POST",
+            data:{
+                id: "72754",
+            },
+            url: "/tp/index.php?s=Home/Plugin/hits",
+            dataType : 'json',
+            success: function(json){
+                $("#hits").text(json.hits);
+            },
+            error: function(){
+
+            }
+        })
+
+        $.ajax({
+            type: "POST",
+            url: "/tp/index.php?s=Home/Plugin/adajax",
+            dataType : 'json',
+            success: function(json){
+                var adstr = '<div class="show-tags01"><span>广告</span></div><a href="'+json[2]+'" target="_blank" ><img src="'+json[0]+'" class="w_index_p1" style="width: 100%;"><img src="'+json[1]+'" class="m_index_p1" style="width: 100%;"></a>';
+                $('.ad_p1').html(adstr);
+            },
+            error: function(){
+
+            }
+        })
+
+        $.ajax({
+            type: "POST",
+            url: "/tp/index.php?s=Home/Plugin/adajax_p2_mobile",
+            dataType : 'json',
+            success: function(json){
+                var adstr = '<div class="show-tags01"><span>广告</span></div><a href="'+json[1]+'" target="_blank" ><img src="'+json[0]+'" style="width: 100%; height: 60px;"></a>';
+                $('.ad_p2_mobile').html(adstr);
+            },
+            error: function(){
+
+            }
+        })
+
+        $.ajax({
+            type: "POST",
+            url: "/tp/index.php?s=Home/Plugin/adajax_p2_pc",
+            dataType : 'json',
+            success: function(json){
+                var adstr = '<div class="show-tags01"><span>广告</span></div> <a rel="nofollow" href="'+json[1]+'" target="_blank"><img src="'+json[0]+'"></a>';
+                $('.ad_p2_pc').html(adstr);
+            },
+            error: function(){
+
+            }
+        })
+
+
+    })
+</script>
+
+<div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: &#39;Google Sans&#39;, Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="./怎麼在MT5上面添加雙線MACD指標_files/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">原文</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">為這個翻譯評分</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">你的意見回饋將用於協助改善 Google 翻譯品質</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="良好的翻譯" aria-label="良好的翻譯" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="不佳的翻譯" aria-label="不佳的翻譯" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="https://translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0" src="./怎麼在MT5上面添加雙線MACD指標_files/saved_resource.html"></iframe></div></div></div><div><div class="sweet-overlay" tabindex="-1"></div><div class="sweet-alert" tabindex="-1"><div class="icon error"><span class="x-mark"><span class="line left"></span><span class="line right"></span></span></div><div class="icon warning"> <span class="body"></span> <span class="dot"></span> </div> <div class="icon info"></div> <div class="icon success"> <span class="line tip"></span> <span class="line long"></span> <div class="placeholder"></div> <div class="fix"></div> </div> <div class="icon custom"></div> <h2>Title</h2><p>Text</p><button class="cancel" tabindex="2">Cancel</button><button class="confirm" tabindex="1">确认</button></div></div></body></html>
