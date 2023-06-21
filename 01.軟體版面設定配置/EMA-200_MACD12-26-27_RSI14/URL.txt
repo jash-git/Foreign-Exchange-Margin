@@ -2,4 +2,4 @@ https://www.youtube.com/watch?v=e4P1_cdDChI
 
 RSI  -動能
 MACD -短趨勢(變盤)
-EMA  -長趨勢
+EMA/MA  -長趨勢(MA 比起 EMA 更可過濾震盪行情)
